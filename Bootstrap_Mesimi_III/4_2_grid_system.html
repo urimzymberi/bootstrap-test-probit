@@ -1,0 +1,147 @@
+<script src="../includes/jsfunctions.js"></script>
+<script>
+  goHeader();
+</script>
+
+<div class="row bg-info" style="height:80vh">
+    <div class="col-2"></div>
+    <div class="col-10 bg-secondary p-0">
+        <div style="height: 50px" class="bg-warning" >test</div>
+        <div style="height: 200px" class="row bg-primary mx-0">
+            <div class="col-8"></div>
+            <div class="col-4 bg-danger"></div>
+        </div>
+    </div>
+</div>
+
+  <div class="container bg-light">
+    <!--####################START HERE####################-->
+
+    <!-- RESPONSIVE GRID -->
+    <div class="row">
+      <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small screens</li>
+          <li>8 column on medium screen</li>
+          <li>9 column on large screen</li>
+          <li>10 column on xlarge screen</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+        <ul>
+          <li>6 column on small screens</li>
+          <li>4 column on medium screen</li>
+          <li>3 column on large screen</li>
+          <li>2 column on xlarge screen</li>
+        </ul>
+      </div>
+    </div>
+
+          <div class="row">
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+              <div style="height: 20px" class="col-1 border border-danger"></div>
+          </div>
+    <br>
+    <!-- EQUAL WIDTH -->
+    <div class="row mb-3">
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+      <div class="col" style="border:1px solid #333">Equal Width</div>
+    </div>
+<br>
+    <!-- EQUAL WIDTH MULTI ROW -->
+    <div class="row mb-3">
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="w-100"></div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+      <div class="col" style="border:1px solid #333">Equal Width Multi</div>
+    </div>
+<br>
+    <!-- AUTO LAYOUT -->
+    <div  class="row mb-3 justify-content-md-center">
+      <div class="col-auto" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-auto" style="border:1px solid #333">Auto Layout</div>
+      <div class="col-auto" style="border:1px solid #333">Auto Layout Auto Layout  Auto Layout</div>
+    </div>
+<br>
+    <!-- EQUAL WIDTH STACKED -->
+    <div class="row mb-3">
+      <div class="col-md-4" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-md-4" style="border:1px solid #333">Equal Width Stack</div>
+      <div class="col-md-4" style="border:1px solid #333">Equal Width Stack</div>
+    </div>
+
+      <br>
+    <!-- ORDERING -->
+    <div class="row">
+      <div class="col order-2" style="border:1px solid #333">
+        First
+      </div>
+      <div class="col order-3" style="border:1px solid #333">
+        Second
+      </div>
+      <div  class="col order-1" style="border:1px solid #333">
+        Third
+      </div>
+    </div>
+      <br>
+      
+      
+    <!-- OFFSETTING -->
+    <div class="row">
+      <!-- 6 column div offset by 3 -->
+      <div class="col-md-6 offset-md-3" style="border:1px solid #333">.col-md-6 .offset-md-3</div>
+    </div>
+
+    <div class="row"><br>
+      <!-- 2 4 column divs, the second offset by 4 -->
+      <div class="col-md-4" style="border:1px solid #333">.col-md-4</div>
+      <div class="col-md-4 offset-md-2" style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+    </div>
+<br>
+    <div class="row">
+      <!-- 2 3 column divs, both offset by 3 -->
+      <div class="col-md-3 offset-md-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-md-2" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+    </div>
+<br>
+    <!-- NESTING -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4 "  style="border:1px solid red">
+          Level 1: .col-sm-3
+        </div>
+        <div class="col-8 bg-warning"  style="border:1px solid green">
+          <div class="row">
+            <div class="col-8 bg-primary"  style=" border:1px solid blue">
+              Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4"  style="border:1px solid purple">
+              Level 2: .col-4 .col-sm-6
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br>
+      <br>
+      <br>
+
+
+    <script>
+      goFooter();
+  </script>

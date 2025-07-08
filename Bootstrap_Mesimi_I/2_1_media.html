@@ -1,0 +1,66 @@
+<script src="../includes/jsfunctions.js"></script>
+<script>
+  goHeader();
+</script>
+<style>
+    /*Shëno disa veçori të ngjashme në secilën pjes 
+    dhe demonstro ndryshimet në ekrane të ndryshme
+    p.sh. në body veçorin background-color */
+
+    /* Pajisje shumë të vogla (smart phones) */
+
+
+    p {
+        background-color:blue;
+        color:green;
+    }
+
+    @media only screen and (min-width: 240px) and (max-width: 575px){
+        p {
+            background-color:red;
+        }
+    }
+
+    /* Pajisje të vogla (landscape smart phones) */
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        p {
+            background-color:aqua;
+        }
+    }
+
+    /* Pajisje të mesme (tableta) */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        p {
+            background-color: black;
+            color:red;
+        }
+    }
+
+    /* Pajisje të mëdha (desktopa) */
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+        p {
+            background-color:yellow;
+            color:white;
+        }
+    }
+
+    /* Pajisje shumë të mëdha (desktopa të mëdhenj) */
+    @media only screen and (min-width: 1200px) and (max-width: 1679px){
+        p {
+            background-color:blue;
+            color:blueviolet;
+        }
+    }
+
+
+</style>
+
+<div class="container">
+    <!--########################START HERE#########################-->
+    <p>test</p>
+
+</div>
+<!-- ./container -->
+<script>
+    goFooter();
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <style>
+        @media only screen and (min-width: 240px) and (max-width: 575px){
+            body{
+                background-color:red;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            body{
+                background-color:aqua;
+            }
+        }
+
+        /* Pajisje të mesme (tableta) */
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+            body{
+                background-color:black;
+            }
+        }
+
+        /* Pajisje të mëdha (desktopa) */
+        @media only screen and (min-width: 992px) and (max-width: 1199px){
+            body{
+                background-color:yellow;
+            }
+        }
+
+        /* Pajisje shumë të mëdha (desktopa të mëdhenj) */
+        @media only screen and (min-width: 1200px) and (max-width: 1679px){
+            body{
+                background-color:blue;
+            }
+        }
+
+        @media only screen and (orientation: landscape){
+            body{
+                background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<div style="height: 200px" id="box"></div>
+<h2>Jam ketu!</h2>
+</body>
+</html>
